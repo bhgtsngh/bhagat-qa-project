@@ -1,5 +1,7 @@
 
 
+---
+
 ```markdown
 # Dream Portal QA Automation
 
@@ -14,14 +16,14 @@ This project validates UI elements, dream diary entries, AI-generated dream type
 
 bhagat-qa-project/
 ├── tests/
-│   └── specs/
-│       ├── ai-validation.spec.ts       # AI classification test
-│       ├── diary.spec.ts               # Diary page tests
-│       ├── home.spec.ts                # Home page behavior
-│       └── total.spec.ts               # Dream summary statistics
-├── utils/
-│   └── ai-validator.ts                 # AI logic for classifying dreams (Good/Bad)
-├── playwright.config.ts                # Playwright config file
+│   ├── specs/
+│   │   ├── ai-validation.spec.ts      # AI classification test
+│   │   ├── diary.spec.ts              # Diary page tests
+│   │   ├── home.spec.ts               # Home page behavior
+│   │   └── total.spec.ts              # Dream summary statistics
+│   └── utils/
+│       └── ai-validator.ts            # AI logic for classifying dreams (Good/Bad)
+├── playwright.config.ts               # Playwright config file
 └── README.md
 
 ````
@@ -140,13 +142,27 @@ npx allure open
 
 **Bhagat Singh**
 Final Year Engineer | Passionate about QA, DevTools & Automation
-[mbhagatsingh.work@gmail.com](mailto:mbhagatsingh.work@gmail.com)
-[LinkedIn](https://linkedin.com/in/bhagatsinghm) | [GitHub](https://github.com/bhgtsngh)
+📧 [mbhagatsingh.work@gmail.com](mailto:mbhagatsingh.work@gmail.com)
+🔗 [LinkedIn](https://linkedin.com/in/bhagatsinghm) | [GitHub](https://github.com/bhgtsngh)
 
 ---
 
 ## License
 
 MIT License © 2025 Bhagat Singh
+
+````
+
+---
+
+### To Use:
+1. Replace `yourusername` in the clone URL if needed.
+2. Save this content into your `README.md`.
+3. Commit & push:
+```bash
+git add README.md
+git commit -m "Updated README with full structure and Allure instructions"
+git push origin main
+````
 
 
