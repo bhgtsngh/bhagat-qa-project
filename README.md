@@ -1,12 +1,14 @@
 
-#  Dream Portal QA Automation
+
+```markdown
+# Dream Portal QA Automation
 
 End-to-end automated testing for the Dream Portal web application using [Playwright](https://playwright.dev/) with TypeScript.  
 This project validates UI elements, dream diary entries, AI-generated dream type classifications, and summary statistics across different pages.
 
+---
 
-
-##  Project Structure
+## Project Structure
 
 ```
 
@@ -22,61 +24,58 @@ bhagat-qa-project/
 ├── playwright.config.ts                # Playwright config file
 └── README.md
 
+````
 
+---
 
+## Features Tested
 
-
-##  Features Tested
-
-###  Home Page
+### Home Page
 - Verifies loading animation is shown and main content appears afterward
 - Checks if the Diary and Summary buttons open in new tabs
 
-###  Dream Diary Page
+### Dream Diary Page
 - Validates total dream entries = 10
 - Ensures every row has all columns filled
 - Confirms each dream is classified as either **Good** or **Bad**
 
-###  AI Validation
+### AI Validation
 - Uses `ai-validator.ts` logic to classify each dream
 - Compares AI output with the actual table entry
 - Logs mismatches for debugging
 
-###  Dream Summary Page
+### Dream Summary Page
 - Checks if total = Good + Bad count
 - Verifies at least one recurring dream is listed
 
+---
 
-
-##  Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Repository
-```
+
+```bash
 git clone https://github.com/yourusername/dream-portal-qa.git
 cd dream-portal-qa
 ````
 
 ### 2. Install Dependencies
 
-```
+```bash
 npm install
 ```
 
 ### 3. Run Tests
 
-```
+```bash
 npx playwright test
 ```
 
+---
 
+## AI Classification Logic (`utils/ai-validator.ts`)
 
-
-
-##  AI Classification Logic (utils/ai-validator.ts)
-
-Example logic used for classifying dreams:
-
-```
+```ts
 export function classifyDreamType(dream: string): 'Good' | 'Bad' {
   const goodKeywords = ['flying', 'love', 'happy', 'win'];
   const badKeywords = ['lost', 'falling', 'death', 'cry'];
@@ -93,9 +92,9 @@ export function classifyDreamType(dream: string): 'Good' | 'Bad' {
 }
 ```
 
+---
 
-
-##  Tech Stack
+## Tech Stack
 
 * [Playwright](https://playwright.dev/) for browser automation
 * TypeScript for type-safe scripting
@@ -103,19 +102,20 @@ export function classifyDreamType(dream: string): 'Good' | 'Bad' {
 
 ---
 
-##  Sample Output
+## Sample Output
 
-```
+```bash
 ✓ should display correct dream stats
 ✓ should only contain Good or Bad dream types
 ✘ AI classification mismatch:
    Dream: "Lost in maze", Table: Bad, AI: Good
 ```
 
+---
+
 ## How to Generate and View the Report
-Run the following commands in terminal:
 
-
+```bash
 # 1. Execute tests (Playwright)
 npx playwright test
 
@@ -124,6 +124,9 @@ npx allure generate ./allure-results --clean
 
 # 3. Open the HTML report in your browser
 npx allure open
+```
+
+---
 
 ## Future Improvements
 
@@ -133,19 +136,17 @@ npx allure open
 
 ---
 
-##  Author
+## Author
 
 **Bhagat Singh**
 Final Year Engineer | Passionate about QA, DevTools & Automation
-📧 [mbhagatsingh@example.com](mailto:mbhagatsingh@example.com)
-🔗 [LinkedIn](https://linkedin.com/in/bhagatsinghm) | [GitHub](https://github.com/bhgtsngh)
+[mbhagatsingh.work@gmail.com](mailto:mbhagatsingh.work@gmail.com)
+[LinkedIn](https://linkedin.com/in/bhagatsinghm) | [GitHub](https://github.com/bhgtsngh)
 
 ---
 
-## 📄 License
+## License
 
 MIT License © 2025 Bhagat Singh
-
-```
 
 
