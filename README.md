@@ -3,14 +3,14 @@
 ---
 
 ```markdown
-# Dream Portal QA Automation
+ Dream Portal QA Automation
 
 End-to-end automated testing for the Dream Portal web application using [Playwright](https://playwright.dev/) with TypeScript.  
 This project validates UI elements, dream diary entries, AI-generated dream type classifications, and summary statistics across different pages.
 
 ---
 
-## Project Structure
+ Project Structure
 
 ```
 
@@ -30,31 +30,31 @@ bhagat-qa-project/
 
 ---
 
-## Features Tested
+ Features Tested
 
-### Home Page
+ Home Page
 - Verifies loading animation is shown and main content appears afterward
 - Checks if the Diary and Summary buttons open in new tabs
 
-### Dream Diary Page
+ Dream Diary Page
 - Validates total dream entries = 10
 - Ensures every row has all columns filled
 - Confirms each dream is classified as either **Good** or **Bad**
 
-### AI Validation
+ AI Validation
 - Uses `ai-validator.ts` logic to classify each dream
 - Compares AI output with the actual table entry
 - Logs mismatches for debugging
 
-### Dream Summary Page
+ Dream Summary Page
 - Checks if total = Good + Bad count
 - Verifies at least one recurring dream is listed
 
 ---
 
-## Installation & Setup
+ Installation & Setup
 
-### 1. Clone the Repository
+ 1. Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/dream-portal-qa.git
